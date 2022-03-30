@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test mocha api/user/user.spec.js",
-    "start": "node api/bin/www.js"
+    "test": "NODE_ENV=test mocha api/user/user.spec.js -w",
+    "start": "node bin/www.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +13,9 @@
     "body-parser": "^1.19.2",
     "express": "^4.17.3",
     "morgan": "^1.10.0",
-    "pm2": "^5.2.0"
+    "pm2": "^5.2.0",
+    "sequelize": "^6.17.0",
+    "sqlite3": "^5.0.2"
   },
   "devDependencies": {
     "mocha": "^9.2.2",
